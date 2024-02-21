@@ -28,6 +28,8 @@ def main(url):
     else:
         print("insertar URL ejemplo : scritp.py --url http://portswigger.com")
 
+# Esta funcion se encarga de crear un archivo con la respectiva contraseña de cada usuario , 
+#una vez que encuentra la contraseña de dicho usuario simplemente hace un break. y sigue con el proximo
 def CrearFicheroUserPassword(LPassword,url,headers):
     total_contrasenas = len(LPassword)
     progreso_actual = 0
@@ -75,7 +77,9 @@ def CrearFicheroUserPassword(LPassword,url,headers):
     
                 # Actualizar la barra de progreso
                 update_progress(progreso_actual, total_usuarios * total_contrasenas)
-    
+
+# Funcion encargada de crear un archivo unicamente con los usuarios , esto es para que no pruebe todas las contraseñas hasta en los usuarios que no existen
+# Es decir solo pruebe en los existentes.
 def CrearFicheroUsuarios(LUsuarios,url,headers):
     total_usuarios = len(LUsuarios)
     progreso_actual = 0  # Contador de progreso
