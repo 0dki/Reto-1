@@ -6,5 +6,5 @@ Puede ser una proxima actualizaciòn como prueba :D.
 
 
 # Modo de uso
-Sencillamente llamamos al script 
-Script.py --url http://example.com
+Sencillamente llamamos al script pasandole como parametro la url del panel de inicio de sesion
+Script.py --url http://example.com/LOGIN
