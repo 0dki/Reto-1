@@ -26,7 +26,7 @@ def main(url):
             lineasPassword = archivoPasswords.readlines()
         CrearFicheroUserPassword(lineasPassword,url,headers)
     else:
-        print("insertar URL ejemplo : scritp.py --url http://portswigger.com")
+        print("insertar URL del login ejemplo : scritp.py --url http://portswigger.com/login")
 
 # Esta funcion se encarga de crear un archivo con la respectiva contraseña de cada usuario , 
 #una vez que encuentra la contraseña de dicho usuario simplemente hace un break. y sigue con el proximo
